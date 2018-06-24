@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5524F649-8021-47B5-93FB-BA55F10DC61F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibreriaMVC</RootNamespace>
+    <AssemblyName>LibreriaMVC</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAgregarSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgregarSocio.Designer.cs">
+      <DependentUpon>FormAgregarSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAutores.Designer.cs">
+      <DependentUpon>FormAutores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarSocio.Designer.cs">
+      <DependentUpon>FormBuscarSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditorial.Designer.cs">
+      <DependentUpon>FormEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibro.Designer.cs">
+      <DependentUpon>FormLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaLibros.Designer.cs">
+      <DependentUpon>FormListaLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaPrestamos.Designer.cs">
+      <DependentUpon>FormListaPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaSocios.Designer.cs">
+      <DependentUpon>FormListaSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrestamos.Designer.cs">
+      <DependentUpon>FormPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAgregarSocio.resx">
+      <DependentUpon>FormAgregarSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAutores.resx">
+      <DependentUpon>FormAutores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarSocio.resx">
+      <DependentUpon>FormBuscarSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditorial.resx">
+      <DependentUpon>FormEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibro.resx">
+      <DependentUpon>FormLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaLibros.resx">
+      <DependentUpon>FormListaLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaPrestamos.resx">
+      <DependentUpon>FormListaPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaSocios.resx">
+      <DependentUpon>FormListaSocios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrestamos.resx">
+      <DependentUpon>FormPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controlador\Controlador.csproj">
+      <Project>{72ac1a9d-5ba0-4cc3-bc5b-c3d12102860a}</Project>
+      <Name>Controlador</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{acc3398a-5c2c-4f27-8cc0-3d7a5d24e303}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
