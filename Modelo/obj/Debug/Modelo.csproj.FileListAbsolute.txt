@@ -1,0 +1,15 @@
+C:\Users\SER\Documents\Practica Profesional\LibreriaMVC\Modelo\bin\Debug\Modelo.dll
+C:\Users\SER\Documents\Practica Profesional\LibreriaMVC\Modelo\bin\Debug\Modelo.pdb
+C:\Users\SER\Documents\Practica Profesional\LibreriaMVC\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\SER\Documents\Practica Profesional\LibreriaMVC\Modelo\obj\Debug\Modelo.dll
+C:\Users\SER\Documents\Practica Profesional\LibreriaMVC\Modelo\obj\Debug\Modelo.pdb
+H:\Practica Profesional\LibreriaMVC\Modelo\bin\Debug\Modelo.dll
+H:\Practica Profesional\LibreriaMVC\Modelo\bin\Debug\Modelo.pdb
+H:\Practica Profesional\LibreriaMVC\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+H:\Practica Profesional\LibreriaMVC\Modelo\obj\Debug\Modelo.dll
+H:\Practica Profesional\LibreriaMVC\Modelo\obj\Debug\Modelo.pdb
+F:\Practica Profesional\LibreriaMVC\Modelo\bin\Debug\Modelo.dll
+F:\Practica Profesional\LibreriaMVC\Modelo\bin\Debug\Modelo.pdb
+F:\Practica Profesional\LibreriaMVC\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+F:\Practica Profesional\LibreriaMVC\Modelo\obj\Debug\Modelo.dll
+F:\Practica Profesional\LibreriaMVC\Modelo\obj\Debug\Modelo.pdb
