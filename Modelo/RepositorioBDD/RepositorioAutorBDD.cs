@@ -16,7 +16,7 @@ namespace Modelo
         private List<Autor> ListaAutores = new List<Autor>();
         static RepositorioAutorBDD instance = null;
 
-        SqlConnection conexion = new SqlConnection(@"Server=LAPTOP-4RC7FOER;Database=Biblioteca;Trusted_Connection=True;");
+        SqlConnection conexion = new SqlConnection();
 
         //AGREAR AUTOR
 

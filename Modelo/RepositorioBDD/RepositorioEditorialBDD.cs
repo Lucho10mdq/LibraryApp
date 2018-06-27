@@ -16,7 +16,7 @@ namespace Modelo
         private List<Editoriales> ListaEditoriales = new List<Editoriales>();
         static RepositorioEditorialBDD instance = null;
 
-        SqlConnection conexion = new SqlConnection(@"Server=LAPTOP-4RC7FOER;Database=Biblioteca;Trusted_Connection=True;");
+        SqlConnection conexion = new SqlConnection();
 
         //AGREGAR EDITORIAL
 
