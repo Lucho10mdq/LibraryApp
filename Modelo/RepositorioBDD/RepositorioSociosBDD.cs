@@ -16,7 +16,7 @@ namespace Modelo
         private List<Socios> listaSocios = new List<Socios>();
         static RepositorioSociosBDD instance = null;
 
-        SqlConnection conexion = new SqlConnection(@"Server=LAPTOP-4RC7FOER;Database=Biblioteca;Trusted_Connection=True;");
+        SqlConnection conexion = new SqlConnection();
 
         //Agregar Socio
         public Socios Agregar(Socios oSocio)
