@@ -50,8 +50,9 @@
     <Compile Include="Libro.cs" />
     <Compile Include="Prestamos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositorioBDD\RepositorioEditorialesBDD.cs" />
-    <Compile Include="RepositorioSociosBDD.cs" />
+    <Compile Include="RepositorioBDD\RepositorioAutorBDD.cs" />
+    <Compile Include="RepositorioBDD\RepositorioSociosBDD.cs" />
+    <Compile Include="RepositorioBDD\RepositorioEditorialBDD.cs" />
     <Compile Include="Repositorios\RepositorioPrestamos.cs" />
     <Compile Include="Repositorios\RepositorioIsbn.cs" />
     <Compile Include="Repositorios\RepositorioEditoriales.cs" />

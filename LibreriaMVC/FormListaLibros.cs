@@ -24,7 +24,7 @@ namespace LibreriaMVC
 
         private void FormListaLibros_Load(object sender, EventArgs e)
         {
-            foreach (Libro oLibro in cLibros.DevolverLibros())
+          /*  foreach (Libro oLibro in cLibros.DevolverLibros())
             {
                 foreach (Editoriales oEditorial in cEditoriales.DevolverEditoriales())
                 {
@@ -36,7 +36,7 @@ namespace LibreriaMVC
                         }
                     }
                 }
-            }
+            }*/
         }
     }
 }

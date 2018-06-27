@@ -21,7 +21,7 @@ namespace LibreriaMVC
         public FormLibro()
         {
             InitializeComponent();
-            foreach (Editoriales Oed in cControlador.DevolverEditoriales())
+          /*  foreach (Editoriales Oed in cControlador.DevolverEditoriales())
             {
                 cmbEditorial.Items.Add(Oed.Nombre);
             }
@@ -29,7 +29,7 @@ namespace LibreriaMVC
             foreach (Isbn Oisbn in cIsbn.DevolverIsbn())
             {
                 cmbIsbn.Items.Add(Oisbn.IdIsbn);
-            }
+            }*/
         }
 
         private void FormLibro_Load(object sender, EventArgs e)

@@ -15,7 +15,7 @@ namespace LibreriaMVC
     public partial class FormEditorial : Form
     {
         ControladorEditoriales cEditorial = new ControladorEditoriales();
-        int idEditorial = 0;
+        
         public FormEditorial()
         {
             InitializeComponent();
@@ -31,10 +31,7 @@ namespace LibreriaMVC
 
             if (!String.IsNullOrEmpty(txtEditorial.Text))
             {
-                idEditorial = idEditorial + 1;
-                result = cEditorial.AgregarEditorial(idEditorial, nombre);
-                
-
+                result = cEditorial.AgregarEditorial(nombre);
             }
             else
                 message = "Complete el campo nombre";
@@ -52,7 +49,7 @@ namespace LibreriaMVC
         private void btnListaEdit_Click(object sender, EventArgs e)
         {
             dtgEditoriales.Rows.Clear();
-            foreach (Editoriales oEdit in cEditorial.DevolverEditoriales())
+           foreach (Editoriales oEdit in cEditorial.DevolverEditoriales())
             {
                // dtgEditoriales.Rows.Clear();
                 dtgEditoriales.Rows.Add(oEdit.IdEditorial, oEdit.Nombre);
@@ -61,8 +58,8 @@ namespace LibreriaMVC
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            try
-            {
+           // try
+           // {
                 string nombre;
                 nombre = txtEditorial.Text;
                 Editoriales edi;
@@ -72,12 +69,12 @@ namespace LibreriaMVC
                 dtgEditoriales.Rows.Clear();
                 dtgEditoriales.Rows.Add(edi.IdEditorial, edi.Nombre);
 
-            }
-            catch(Exception ex)
+        //    }
+         /*   catch(Exception ex)
             {
                 MessageBox.Show("No existe la editorial");
             }
-           
+           */
 
         }
 

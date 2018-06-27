@@ -11,9 +11,8 @@ namespace Modelo
         int idAutor;
         string nombre;
 
-        public Autor(int pIdAutor, string pNombre)
+        public Autor(string pNombre)
         {
-            idAutor = pIdAutor;
             nombre = pNombre;
         }
 

@@ -9,36 +9,37 @@ namespace Controlador
 {
      public class ControladorAutores
     {
-        private RepositorioAutores ListaAutores = RepositorioAutores.GetInstance();
+        private RepositorioAutorBDD ListaAutores = RepositorioAutorBDD.GetInstance();
 
-        public bool AgregarAutor(int idAutor,string nombreCompleto)
+        public bool AgregarAutor(string nombreCompleto)
         {
             var result = false;
-            Autor oAutor = new Autor(idAutor, nombreCompleto);
+            Autor oAutor = new Autor(nombreCompleto);
 
-            if(ListaAutores.BuscarAutor(nombreCompleto)==null)
+           /* if(ListaAutores.BuscarAutor(nombreCompleto)==null)
             {
                 ListaAutores.AgregarAutor(oAutor);
                 result = true;
-            }
+            }*/
+            ListaAutores.AgregarAutor(oAutor);
+            result = true;
             return result;
            
         }
 
-        public void BorrarAutor(Autor a)
-        {
-            ListaAutores.BorrarAutor(a);
-        }
+        /* public void BorrarAutor(Autor a)
+         {
+             ListaAutores.BorrarAutor(a);
+         }*/
 
-        public List<Autor>DevolverAutores()
-        {
-           return ListaAutores.DevolverAutores();
-        }
+         public Autor BuscarAutorPorNombre(string nombre)
+         {
+           return  ListaAutores.BuscarAutor(nombre);
 
-        public Autor BuscarAutorPorNombre(string nombre)
+         }
+        public List<Autor> DevolverAutores()
         {
-          return  ListaAutores.BuscarAutor(nombre);
-
+            return ListaAutores.DevolverAutores();
         }
 
     }

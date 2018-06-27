@@ -15,7 +15,6 @@ namespace LibreriaMVC
     public partial class FormAutores : Form
     {
         ControladorAutores cAutor = new ControladorAutores();
-        int idAutor = 0;
         public FormAutores()
         {
             InitializeComponent();
@@ -29,22 +28,14 @@ namespace LibreriaMVC
             nombre = txtNombre.Text;
 
             if (!String.IsNullOrEmpty(txtNombre.Text))
-            {
-                idAutor = idAutor + 1;
-                result = cAutor.AgregarAutor(idAutor, nombre);
-
-            }
+                result = cAutor.AgregarAutor(nombre);
             else
                 message = "Complete el campo nombre";
             if (!result && String.IsNullOrEmpty(message))
                 message = "El autor ya existe en la base de datos";
             else if (result)
                 message = "El autor fue guardado correctamente";
-
             MessageBox.Show(message);
-
-           
-
             txtNombre.Clear();
         }
 
@@ -54,13 +45,11 @@ namespace LibreriaMVC
             {
                 dtgAutor.Rows.Clear();
                 dtgAutor.Rows.Add(a.IdAutor, a.Nombre);
-            }
-
+            }   
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-
             try
             {
                 string nombre;
@@ -73,9 +62,7 @@ namespace LibreriaMVC
             catch(Exception ex)
             {
                 MessageBox.Show("Autor no encontrado");
-            }
-           
-
+            }  
         }
 
         private void dtgAutor_CellContentClick(object sender, DataGridViewCellEventArgs e)

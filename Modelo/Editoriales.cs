@@ -11,9 +11,9 @@ namespace Modelo
         int idEditorial;
         string nombre;
 
-        public Editoriales(int pIdEditorial, string pNombre)
+        public Editoriales( string pNombre)
         {
-            idEditorial = pIdEditorial;
+           
             nombre = pNombre;
         }
 

@@ -9,30 +9,31 @@ namespace Controlador
 {
    public  class ControladorEditoriales
     {
-       private RepositorioEditoriales ListaEditoriales = RepositorioEditoriales.GetInstance();
+       private RepositorioEditorialBDD ListaEditoriales = RepositorioEditorialBDD.GetInstance();
 
-        public bool AgregarEditorial(int IdEditorial,string Nombre )
+        public bool AgregarEditorial(string Nombre)
         {
             var result = false;
-            Editoriales oEditorial = new Editoriales(IdEditorial, Nombre);
-            if(ListaEditoriales.BuscarEditorial(Nombre)==null)
+            Editoriales oEditorial = new Editoriales(Nombre);
+            /*if(ListaEditoriales.BuscarEditorial(Nombre)==null)
             {
-                ListaEditoriales.AgregarEditorial(oEditorial);
-                result = true;
-            }
+              
+            }*/
+           
+            ListaEditoriales.AgregarEditorial(oEditorial);
+            result = true;
             return result;
-          
 
         }
 
-        public void BorrarEditorial(Editoriales e)
+       /* public void BorrarEditorial(Editoriales e)
         {
-            ListaEditoriales.BorrarEditorial(e);
-        }
+          //  ListaEditoriales.BorrarEditorial(e);
+        }*/
 
         public List<Editoriales>DevolverEditoriales()
         {
-            return ListaEditoriales.DevolverEditoriales();
+            return ListaEditoriales.ListarEditoriales();
         }
 
         public Editoriales BuscarEditorial(string nombre)

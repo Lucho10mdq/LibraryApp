@@ -14,7 +14,7 @@ namespace Modelo
      public class RepositorioSociosBDD : Singleton<RepositorioSociosBDD>
     {
         private List<Socios> listaSocios = new List<Socios>();
-      //  static RepositorioSociosBDD instance = null;
+        static RepositorioSociosBDD instance = null;
 
         SqlConnection conexion = new SqlConnection(@"Server=LAPTOP-4RC7FOER;Database=Biblioteca;Trusted_Connection=True;");
 
