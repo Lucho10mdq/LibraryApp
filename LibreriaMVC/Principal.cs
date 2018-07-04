@@ -33,7 +33,7 @@ namespace LibreriaMVC
         public Principal()
         {
             InitializeComponent();
-            cIsbn.AgregarIsbn(ideditorial1, titulo1, idisbn1, nroIsbn, ideditorial2, titulo2, idisbn2, nroIsbn2, ideditorial3, titulo3, idisbn3, nroIsb3);
+           // cIsbn.AgregarIsbn(ideditorial1, titulo1, idisbn1, nroIsbn, ideditorial2, titulo2, idisbn2, nroIsbn2, ideditorial3, titulo3, idisbn3, nroIsb3);
         }
 
         private void button1_Click(object sender, EventArgs e)

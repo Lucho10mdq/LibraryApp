@@ -24,19 +24,8 @@ namespace LibreriaMVC
 
         private void FormListaLibros_Load(object sender, EventArgs e)
         {
-          /*  foreach (Libro oLibro in cLibros.DevolverLibros())
-            {
-                foreach (Editoriales oEditorial in cEditoriales.DevolverEditoriales())
-                {
-                    foreach (Isbn oIsbn in cIsbn.DevolverIsbn())
-                    {
-                        if ((oLibro.IdEditorial1 == oEditorial.IdEditorial) && (oLibro.Idisnb == oIsbn.Nisbn))
-                        {
-                            dtgListaLibros.Rows.Add(oIsbn.Titulo, oEditorial.Nombre, oIsbn.IdIsbn, oLibro.AnioEdicion, oLibro.Estado, oLibro.Disponibilidad);
-                        }
-                    }
-                }
-            }*/
+            dtgListaLibros.DataSource = null;
+            dtgListaLibros.DataSource = cLibros.DevolverLibros();
         }
     }
 }

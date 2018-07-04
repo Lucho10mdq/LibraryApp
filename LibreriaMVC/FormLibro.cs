@@ -21,15 +21,15 @@ namespace LibreriaMVC
         public FormLibro()
         {
             InitializeComponent();
-          /*  foreach (Editoriales Oed in cControlador.DevolverEditoriales())
+            foreach (Editoriales Oed in cControlador.DevolverEditoriales())
             {
-                cmbEditorial.Items.Add(Oed.Nombre);
+                cmbEditorial.Items.Add(Oed.IdEditorial);
             }
 
             foreach (Isbn Oisbn in cIsbn.DevolverIsbn())
             {
                 cmbIsbn.Items.Add(Oisbn.IdIsbn);
-            }*/
+            }
         }
 
         private void FormLibro_Load(object sender, EventArgs e)
@@ -39,12 +39,12 @@ namespace LibreriaMVC
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            int idEditorial = cmbEditorial.SelectedIndex;
-            int idIsbn = cmbIsbn.SelectedIndex;
+            int idEditorial =Convert.ToInt32(cmbEditorial.SelectedItem.ToString());
+            int idIsbn = Convert.ToInt32(cmbIsbn.SelectedItem.ToString());
             string datos = "";
             var message = String.Empty;
 
-            if (idEditorial == 0 && idIsbn == 0 && !String.IsNullOrEmpty(mskAnio.Text))
+            if (idEditorial != 0 && idIsbn != 0 && !String.IsNullOrEmpty(mskAnio.Text))
             {
 
                 if (rdbNuevo.Checked)
@@ -57,8 +57,7 @@ namespace LibreriaMVC
                     datos = "Usado";
 
                 }
-                idLibro = idLibro + 1;
-                cLibro.Agregar(Convert.ToDateTime(mskAnio.Text), idEditorial, idIsbn, datos, true, idLibro);
+                cLibro.Agregar(Convert.ToDateTime(mskAnio.Text), idEditorial, idIsbn, datos, true);
                 message = "Se guardo con exito";
             }
             else

@@ -6,58 +6,47 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-   public class Libro
+    //data tranfer objects
+   public  class LibroDTO
     {
-        DateTime anioEdicion;
-        int IdEditorial;
-        int idisbn;
+        string nombreEditorial;
+        string tituloIsbn;
         string estado;
         bool disponibilidad;
-        int idLibro;
+        DateTime anioEdicion;
 
-        public Libro(DateTime pAnioEdicion, int pIdEditorial, int pIdisbn, string pEstado, bool pDisponibilidad)
+        public LibroDTO(string nombreEditorial, string tituloIsbn, string estado, bool disponibilidad, DateTime anioEdicion)
         {
-            anioEdicion = pAnioEdicion;
-            IdEditorial = pIdEditorial;
-            idisbn = pIdisbn;
-            estado = pEstado;
-            disponibilidad = pDisponibilidad;
+            this.nombreEditorial = nombreEditorial;
+            this.tituloIsbn = tituloIsbn;
+            this.estado = estado;
+            this.disponibilidad = disponibilidad;
+            this.anioEdicion = anioEdicion;
         }
 
-        public int IdLibro
+        public string NombreEditorial
         {
             get
             {
-                return idLibro;
-            }
-            set
-            {
-                idLibro = value;
-            }
-        }
-        public DateTime AnioEdicion
-        {
-            get
-            {
-                return anioEdicion;
+                return nombreEditorial;
             }
 
             set
             {
-                anioEdicion = value;
+                nombreEditorial = value;
             }
         }
 
-        public int IdEditorial1
+        public string TituloIsbn
         {
             get
             {
-                return IdEditorial;
+                return tituloIsbn;
             }
 
             set
             {
-                IdEditorial = value;
+                tituloIsbn = value;
             }
         }
 
@@ -87,16 +76,17 @@ namespace Modelo
             }
         }
 
-        public int Idisnb
+        public DateTime AnioEdicion
         {
             get
             {
-                return idisbn;
+                return anioEdicion;
             }
+
             set
             {
-                idisbn = value;
-            }           
+                anioEdicion = value;
+            }
         }
     }
 }

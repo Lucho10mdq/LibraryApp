@@ -11,18 +11,19 @@ namespace Modelo
         int idEditorial;
         string titulo;
         int idIsbn;
-        int nisbn;
+        string nisbn;
+        DateTime anio;
 
-        public Isbn(int pIdEditorial, string pTitulo, int pIdIsbn, int pIsbn)
+        public Isbn(int pIdEditorial, string pTitulo,string pIsbn,DateTime pAnio)
         {
             idEditorial = pIdEditorial;
             titulo = pTitulo;
-            idIsbn = pIdIsbn;
             nisbn = pIsbn;
+            anio = pAnio;
         }
 
 
-        public int Nisbn
+        public string Nisbn
         {
             get
             {
@@ -69,6 +70,19 @@ namespace Modelo
             set
             {
                 idIsbn = value;
+            }
+        }
+
+        public DateTime Anio
+        {
+            get
+            {
+                return anio;
+            }
+
+            set
+            {
+                anio = value;
             }
         }
     }
